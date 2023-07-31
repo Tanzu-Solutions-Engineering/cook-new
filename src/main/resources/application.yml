@@ -1,7 +1,7 @@
 ---
 spring:
   config:
-    import: "configserver:https://github.com/spring-cloud-services-samples/cook-config"
+    import: "configserver:"
   application:
     name: cook
 
