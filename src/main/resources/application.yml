@@ -1,7 +1,7 @@
 ---
 spring:
   config:
-    import: configserver
+    import: "configserver:"
   application:
     name: cook
 
