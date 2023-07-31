@@ -1,5 +1,7 @@
 ---
 spring:
+  config:
+    import: configserver
   application:
     name: cook
 
@@ -15,6 +17,3 @@ management:
     web:
       exposure:
         include: '*'
-spring:
-  config:
-    import: configserver
