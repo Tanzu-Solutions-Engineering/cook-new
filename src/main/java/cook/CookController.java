@@ -26,11 +26,11 @@ public class CookController {
 
 	private final Menu menu;
 
-	private final DessertMenu dessertMenu;
-
-	public CookController(Menu menu, DessertMenu dessertMenu) {
+	// private final DessertMenu dessertMenu;
+public CookController(Menu menu) {
+	// public CookController(Menu menu, DessertMenu dessertMenu)
 		this.menu = menu;
-		this.dessertMenu = dessertMenu;
+		// this.dessertMenu = dessertMenu;
 	}
 
 	@RequestMapping("/restaurant")
@@ -43,9 +43,9 @@ public class CookController {
 		return menu.getSecretMenu();
 	}
 
-	@RequestMapping("/restaurant/dessert-menu")
-	public String dessertMenu() throws IOException {
-		return dessertMenu.fetchMenu();
-	}
+	// @RequestMapping("/restaurant/dessert-menu")
+	// public String dessertMenu() throws IOException {
+	// 	return dessertMenu.fetchMenu();
+	// }
 
 }
