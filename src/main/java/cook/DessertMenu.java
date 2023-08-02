@@ -25,8 +25,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StreamUtils;
 import io.pivotal.spring.cloud.config.client.PlainTextConfigClient;
 
+
 @Service
+@EnableAutoCOnfiguration
 public class DessertMenu {
+
+
 
 	private final PlainTextConfigClient configClient;
 
