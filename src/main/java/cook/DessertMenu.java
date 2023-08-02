@@ -14,35 +14,35 @@
  * limitations under the License.
  */
 
-package cook;
+// package cook;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.Charset;
-
-
-import org.springframework.stereotype.Service;
-import org.springframework.util.StreamUtils;
-import io.pivotal.spring.cloud.config.client.PlainTextConfigClient;
+// import java.io.IOException;
+// import java.io.InputStream;
+// import java.nio.charset.Charset;
 
 
-@Service
-@EnableAutoConfiguration
-public class DessertMenu {
+// import org.springframework.stereotype.Service;
+// import org.springframework.util.StreamUtils;
+// import io.pivotal.spring.cloud.config.client.PlainTextConfigClient;
+
+
+// @Service
+// @EnableAutoConfiguration
+// public class DessertMenu {
 
 
 
-	private final PlainTextConfigClient configClient;
+// 	private final PlainTextConfigClient configClient;
 
-	public DessertMenu(PlainTextConfigClient configClient) {
-		this.configClient = configClient;
-	}
+// 	public DessertMenu(PlainTextConfigClient configClient) {
+// 		this.configClient = configClient;
+// 	}
 
-	public String fetchMenu() throws IOException {
-		InputStream input = configClient
-				.getPlainTextResource("cloud", "main", "dessert.json")
-				.getInputStream();
-		return StreamUtils.copyToString(input, Charset.defaultCharset());
-	}
+// 	public String fetchMenu() throws IOException {
+// 		InputStream input = configClient
+// 				.getPlainTextResource("cloud", "main", "dessert.json")
+// 				.getInputStream();
+// 		return StreamUtils.copyToString(input, Charset.defaultCharset());
+// 	}
 
-}
+// }
