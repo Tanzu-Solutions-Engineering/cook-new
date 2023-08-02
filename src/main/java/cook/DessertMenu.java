@@ -27,7 +27,7 @@ import io.pivotal.spring.cloud.config.client.PlainTextConfigClient;
 
 
 @Service
-@EnableAutoCOnfiguration
+@EnableAutoConfiguration
 public class DessertMenu {
 
 
